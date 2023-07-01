@@ -1,0 +1,727 @@
+body {
+    max-width: 1280px;
+}
+
+header {
+    height: 730px;
+}
+
+/* TOP */
+
+#top {
+    position: relative;
+    z-index: 10;
+}
+
+#top_mobile {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.top_title {
+    font-family: "IBM bold";
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+    line-height: 100%;
+}
+
+.top_title_mobile {
+    font-family: "IBM bold";
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+    line-height: 100%;
+    align-items: left;
+}
+
+.line_title {
+    height: 1px;
+    background-color: rgb(112, 112, 112);
+}
+
+.nav-link {
+    font-family: "Lato black";
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-item a:hover {
+    color:rgb(180, 125, 51) !important;
+}
+
+.active {
+    color:rgb(180, 125, 51) !important;
+}
+
+.dropdown-menu {
+    border: 1px solid white;
+    border-radius: 0px;
+    box-shadow: 0px 0px 9px 0px rgb(196, 196, 196);
+    padding: 25px 10px 20px 10px;
+    position: relative;
+    top: 40px !important;
+}
+
+.dropdown-menu.mobile {
+    margin: 20px 0px;
+}
+
+.dropdown-item {
+    font-family: "IBM medium";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.dropdown-item:hover {
+    color:  rgb(177, 126, 59);
+    background-color: white;
+}
+
+#navbarTogglerDemo02 {
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    text-align: left;
+    padding: 50px 25px;
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../SVG/fechar.svg);
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url(../SVG/menu.svg);
+}
+
+/* CAROUSSEL */
+
+.carousel_position {
+    position: relative;
+    bottom: 147px;
+}
+
+.carousel_position.mobile {
+    position: relative;
+    bottom: 0px;
+}
+
+.carousel {
+    width: 1280px;
+    max-height: 730px !important;
+}
+
+.carousel.mobile{
+    width: 100%;
+    height: 760px !important;
+}
+
+.cabecalho_text {
+    width: 40%;
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 150px;
+}
+
+.carousel-caption.mobile {
+    width: 90%;
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 80px;
+    margin-right: 100px !important;
+    position: relative;
+    left: 30px;
+    right: auto;
+    bottom: 400px;
+}
+
+.img_carousel {
+    width: 100%;
+    height: 730px !important;
+}
+
+.banner_new {
+    margin-top: 122px;
+    font-family: "Lato black";
+    font-size: 14px;
+    color:rgb(180, 125, 51);
+    text-transform: uppercase;
+}
+
+.banner_title {
+    margin: 15px 0px;
+    padding-top: 0px;
+    padding-right: 120px;
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 110%;
+}
+
+.banner_text {
+    padding-right: 30px;
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    line-height: 130%;
+}
+
+.banner_button {
+    width: 120px;
+    height: 30px;
+    border: 0px;
+    background-image: url("../SVG/sabermais1.svg");
+    z-index: 10;
+}
+
+.banner_button:hover {
+    background-image: url("../SVG/sabermais2.svg");
+}
+
+.sem_novidade {
+    margin-top: 153px;
+    padding-right: 20px !important;
+}
+
+.sem_novidade.mobile {
+    margin-top: 40px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: start;
+
+}
+
+.carousel-indicators button {
+    height: 20px !important;
+    width: 20px !important;
+    background-image: url(../SVG/bolabanner1.svg);
+    background-color: rgba(255, 255, 255, 0) !important;
+    position: relative;
+    bottom: 70px;
+    right: 8px;
+    margin: 0px 10px !important;
+}
+
+.carousel-indicators button.active {
+    background-image: url(../SVG/bolabanner2.svg);
+}
+
+/* MAIN */
+
+.welcome_box {
+    max-width: 1190px !important;
+    height: auto;
+    position: relative;
+    bottom: 100px;
+    background-color: white;
+    padding: 70px;
+    box-shadow: 0px 4px 7px 0px rgb(196, 196, 196);
+}
+
+.welcome_img {
+    width: 344px;
+    height: 396px;
+    box-shadow: 4px 4px 7px 0px rgb(196, 196, 196);
+}
+
+.welcome_title {
+    font-family: "IBM medium";
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.welcome_text {
+    margin-top: 30px;
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    text-align: justify;
+}
+
+.last_books_title {
+    margin-left: 74px;
+    font-family: "IBM medium";
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.last_books_text {
+    margin-left: 74px;
+    margin-top: 23px;
+    padding: 0px 80px 0px 0px;
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* CARD */
+
+.card {
+    border: 0px;
+    border-radius: 0px;
+    width: 330px;
+    height: 700px;
+    margin-top: 70px;
+    box-shadow: 4px 4px 7px 0px rgb(196, 196, 196);
+}
+
+.card_img {
+    width: 100%;
+    height: 428px;
+}
+
+.card_title {
+    margin: 30px 25px 0px 25px;
+    font-family: "IBM medium";
+    font-size: 23px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+    line-height: 100%;
+}
+
+.card_new {
+    margin: 10px 25px 0px 25px;
+    color: rgb(177, 126, 59);
+    text-transform: uppercase;
+}
+
+.card_text {
+    margin: 10px 25px 0px 25px;
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    line-height: 130%;
+}
+
+.card_button {
+    width: 120px;
+    height: 30px;
+    border: 0px;
+    background-image: url("../SVG/sabermais1.svg");
+    margin-right: 25px;
+}
+
+.card_button:hover {
+    background-image: url("../SVG/sabermais2.svg");
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 75px;
+}
+
+.line_footer {
+    height: 2px;
+    background-color: rgb(177, 177, 177);
+}
+
+.nav_footer {
+    margin: 27px 0px;
+}
+
+.nav-link-footer {
+    font-family: "Lato black";
+    font-size: 16px;
+    margin: 0px 10px;
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contactos {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.title_contactos {
+    font-family: "IBM medium";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.sub_contactos {
+    font-family: "IBM medium";
+    font-size: 15px;
+    color: rgb(177, 126, 59);;
+}
+
+.sub_text {
+    margin-top: 6px;
+    font-family: "IBM light";
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+    line-height: 100%;
+}
+
+.title_redes {
+    font-family: "IBM medium";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.copyright {
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+}
+
+#cookies {
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+}
+
+/* AUTOR */
+
+.box_paginas {
+    width: 1190px;
+    height: 130px;
+    position: relative;
+    bottom: 100px;
+    right: 17px;
+    background-color: white;
+    box-shadow: 0px 4px 7px 0px rgb(196, 196, 196);
+}
+
+.title_box {
+    font-family: "Lato black";
+    font-size: 18px;
+    color:rgb(180, 125, 51);
+    text-transform: uppercase;
+}
+
+.sub_box {
+    font-family: "IBM medium";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.about_me_text {
+    margin-top: 23px;
+    font-family: "IBM light";
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+}
+
+.img_about_me {
+    width: 450px !important;
+}
+
+.back_button {
+    width: 132px;
+    height: 30px;
+    border: 0px;
+    background-image: url("../SVG/voltar1.svg");
+}
+
+.back_button:hover {
+    background-image: url("../SVG/voltar2.svg");
+}
+
+.see_more_button {
+    display: none;
+    width: 90px;
+    height: 26px;
+    border: 0px;
+    background-image: url("../SVG/vermais.svg");
+    background-size: cover;
+}
+
+.see_more_button:hover {
+    background-image: url("../SVG/vermais-cinza.svg");
+}
+
+
+/* CONTACTOS */
+
+.line_contactos {
+    width: 60px;
+    height: 1px;
+    background-color: rgb(112, 112, 112);
+}
+
+/* LIVROS */
+
+.img_book {
+    width: 305px;
+    height: 471px;
+}
+
+/* IMPRENSA */
+
+.box_imprensa {
+    box-shadow: 0px 4px 3px rgb(229, 229, 229);
+}
+
+.line_imprensa {
+    height: 1px;
+    background-color: rgb(169, 115, 57);
+}
+
+.date_imprensa {
+    font-family: "IBM medium";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+
+.img_imprensa {
+    width: 100%;
+}
+
+.text_imprensa {
+    font-family: "IBM light";
+    font-size: 13px;
+    color: rgb(77, 77, 77);
+}
+
+/* PAGINACAO */
+
+.previous_page {
+    width: 17px;
+    height: 30px;
+    border: 0px;
+    margin: 0px 35px;
+    background-color: white;
+    background-image: url("../SVG/setaesquerda1.svg");
+}
+
+.previous_page:hover {
+    background-image: url("../SVG/setaesquerda2.svg");
+}
+
+.next_page {
+    width: 17px;
+    height: 30px;
+    border: 0px;
+    margin: 0px 35px;
+    background-color: white;
+    background-image: url("../SVG/setadireita1.svg");
+}
+
+.next_page:hover {
+    background-image: url("../SVG/setadireita2.svg");
+}
+
+.paginacao {
+    font-family: "IBM medium";
+    border: 0px;
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px 17px;
+    color: rgb(77, 77, 77);
+    background-color: white;
+}
+
+@media all and (min-width: 1280px) {
+
+    .box {
+        width: 1190px !important;
+    }
+}
+
+
+@media all and (max-width: 1200px) {
+
+    .div_welcome {
+        width: 500px !important;
+    }
+}
+
+@media all and (max-width: 1100px) {
+
+    .banner_title {
+        padding-right: 0px;
+    }
+
+    .welcome_box {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .welcome_img {
+        width: 412px;
+        height: 496px;
+        margin: auto !important;
+    }
+    
+    .welcome_button {
+        align-self: center !important;
+    }
+
+    .welcome_title {
+        margin-top: 50px !important;
+    }
+
+    .contactos {
+        display: flex;
+        justify-content: space-around !important;
+        padding: 0px 100px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+
+    .welcome_box {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .box_paginas {
+        position: relative !important;
+        bottom: 0px !important;
+    }
+    
+    .carousel-indicators button {
+        position: relative;
+        bottom: 5px;
+        right: 30px; 
+    }
+
+    .banner_title {
+        padding-right: 0px;
+    }
+
+    .img_about_me {
+        width: 450px !important;
+    }
+
+    .about_me_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .margin_mobile {
+        margin-top: 40px !important;
+    }
+
+    .margin_mobile_contactos {
+        margin-top: 80px !important;
+    }
+
+}
+
+@media all and (max-width: 576px) {
+
+    .see_more_button {
+        display: block;
+    }
+
+    .banner_title {
+        font-size: 28px !important;
+        padding-right: 0px;
+    }
+
+    .img_about_me {
+        width: 290px !important;
+    }
+
+    .welcome_img {
+        width: 286px !important;
+        height: 396px !important;
+        margin-top: 73px !important;
+    }
+
+    .welcome_button {
+        margin-bottom: 70px !important;
+    }
+
+    .title_box, .sub_box {
+        margin-left: 50px !important;
+    }
+
+    .about_me_text {
+       display: none !important;
+    }
+
+    .about_me_text.mobile {
+        padding: 0px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div_welcome {
+        width: 286px !important;
+    }
+
+    .welcome_box {
+        padding: 0px !important;
+    }
+
+    .last_books_title, .last_books_text {
+        width: 286px !important;
+        margin-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .card {
+        width: 286px !important;
+    }
+
+    .card_title {
+        width: 80% !important;
+    }
+
+    .box_paginas {
+        height: auto !important;
+    }
+
+    .img_book {
+        margin-right: 0px !important;
+        width: 283px;
+        height: 385px;
+        float: none;
+        margin-bottom: 40px;
+    }
+
+    .book_text {
+        margin-top: 50px;
+    }
+
+    .back_button.book {
+        float: none !important;
+    }
+
+    .box_imprensa {
+        margin-top: 60px;
+    }
+
+    .sub_box.imprensa {
+        margin-left: 0px !important;
+    }
+
+    .paginacao {
+        margin: 0px 10px;
+    }
+
+    .previous_page, .next_page {
+        margin: 0px 20px;
+    }
+    
+}
+
+@media all and (max-width: 360px){
+
+    .box_paginas {
+        width: 360px !important;
+    }
+}
+

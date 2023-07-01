@@ -1,0 +1,75 @@
+body {
+    background-image: url("../JPG/office.jpg");
+    background-size: auto;
+    font-family: "Lato black";
+}
+
+.box {
+    border-radius: 10px;
+    background-color: rgba(110, 110, 110, 0.7);
+}
+
+input {
+    text-align: center;
+}
+
+input[type="submit"], button {
+    border: none;
+    background-color: rgba(179, 179, 179, 0.5);
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.nav-link {
+    padding: 0px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    color: rgb(254, 254, 254) !important;
+}
+
+label {
+    color: black;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+}
+
+th, td {
+    padding: 5px 10px;
+    border: 1px solid white;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.imagem {
+    width: 70px;
+    height: auto;
+}
+
+.file_manager {
+   width: 20px;
+   height: auto;
+}
+
+input[type=text] {
+    width: 70%;
+}
+
+.imagem_autor {
+    max-width: 500px;
+    height: auto;
+}
+
