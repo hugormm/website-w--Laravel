@@ -1,3 +1,5 @@
+@include('site.layouts._partials.header', ['cabecalho' => $cabecalho])
+
 <main id="main" class="container-fluid">
 
         <div class="row justify-content-end">
@@ -26,21 +28,23 @@
         <div class="row d-flex flex-column margin_mobile">
 
             <div class="col-12 px-0 d-flex justify-content-center">
-                <img src="<?= $dados["foto"]; ?>" alt="foto" class="img_about_me">
+                <img src="{{ asset($autor->foto) }}" alt="foto" class="img_about_me">
             </div>
 
             <div class="col-10 col-sm-9 about_me_text mobile d-none align-self-center">
-                <div class="d-block" id="texto_menor"><?= substr($dados["texto"], 0, 500); ?> ...</div>
-                <div class="d-none" id="texto_maior"><?= $dados["texto"]; ?></div>
+                <div class="d-block" id="texto_menor">{{ $autor->texto }} ...</div>
+                <div class="d-none" id="texto_maior">{{ $autor->texto }}</div>
                 <button onclick="seeMore()" class="see_more_button mx-auto" id="ver_mais" style="margin-top: 40px;"></button>
                 <button onclick="goBack()" class="back_button" style="margin-top: 20px;"></button>
             </div>
 
             <div class="col-10 col-sm-9 about_me_text align-self-center">
-                <div><?= $dados["texto"]; ?></div>
+                <div>{{ $autor->texto }}</div>
                 <button onclick="goBack()" class="back_button" style="margin-top: 20px;"></button>
             </div>
         </div>    
         
     </main>
+
+    @include('site.layouts._partials.footer', ['contactos' => $contactos, 'redes' => $redes])
     

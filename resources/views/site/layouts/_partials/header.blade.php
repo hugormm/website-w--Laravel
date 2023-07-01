@@ -54,45 +54,7 @@ Data inicio: 01/07/2023
     </div>
 
     <!-- CAROUSSEL -->
-    <div class="row d-none d-md-block">
-
-        <div class="col-12 d-flex justify-content-center p-0 carousel_position">
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <?php for($i=0; $i<count($dados_header); $i++): ?>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?= $i; ?>" class="<?= ($i == 0) ? "active" : ""; ?>" aria-current="true" aria-label="Slide 1"></button>
-                    <?php endfor; ?>
-                </div>
-
-                <div class="carousel-inner">
-                    
-                    <?php for($i=0; $i<count($dados_header); $i++): ?>
-
-                        <?php $d = $dados_header[$i]; ?>
-
-                        <div class="carousel-item <?= ($i == 0) ? "active" : ""; ?>" data-bs-interval="5000">
-                            <img src="<?= $d["imagem"]; ?>" class="img_carousel" alt="img_1">
-                            <div class="cabecalho_text carousel-caption d-none d-md-block">
-                                <div class="banner_new"><?= $d["tag"] ?></div>
-                                <div class="banner_title"><?= $d["titulo"] ?></div>
-                                <div class="banner_text"><?= $d["texto"] ?></div>
-                                <a href="<?= $d["saber_mais"] ?>">
-                                    <button style="margin-top: 15px;" class="banner_button"></button>
-                                </a>
-                            </div>
-                        </div>
-
-                    <?php endfor; ?>
-
-                </div>
-
-            </div>
-        
-        </div>
-
-    </div>
+    @include('site.layouts._components.caroussel')
 
     <!-- CABECALHO MOBILE -->
     <div class="row d-block d-md-none px-0" id="top_mobile">
@@ -118,7 +80,7 @@ Data inicio: 01/07/2023
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
                         @include('site.layouts._components.navbar_ul')
-                        
+
                     </div>
                 </div>
             </nav>
@@ -128,44 +90,6 @@ Data inicio: 01/07/2023
     </div>
 
     <!-- CAROUSSEL -->
-    <div class="row d-block d-md-none border">
-
-        <div class="col-12 d-flex justify-content-center p-0 carousel_position mobile">
-
-            <div id="carouselExampleCaptions2" class="carousel mobile slide" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <?php for($i=0; $i<count($dados_header); $i++): ?>
-                        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="<?= $i; ?>" class="<?= ($i == 0) ? "active" : ""; ?>" aria-current="true" aria-label="Slide 1"></button>
-                    <?php endfor; ?>
-                </div>
-
-                <div class="carousel-inner">
-
-                    <?php for($i=0; $i<count($dados_header); $i++): ?>
-
-                        <?php $d = $dados_header[$i]; ?>
-
-                            <div class="carousel-item <?= ($i == 0) ? "active" : ""; ?>" data-bs-interval="5000">
-                                <img src="<?= $d["imagem_mobile"]; ?>" class="img_carousel mobile" alt="img_1">
-                                <div class="carousel-caption mobile">
-                                    <div class='banner_new mt-0'><?= $d["tag"] ?></div>
-                                    <div class="banner_title <?= ($i == 0) ? "" : "sem_novidade mobile"; ?>"><?= $d["titulo"] ?></div>
-                                    <div class="banner_text"><?= $d["texto"] ?></div>
-                                    <a href="<?= $d["saber_mais"] ?>">
-                                        <button style="margin-top: 15px;" class="banner_button"></button>
-                                    </a>
-                                </div>
-                            </div>
-
-                    <?php endfor; ?>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+    <!--@include('site.layouts._components.caroussel') -->
 
     </header>
