@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Autor;
 use App\Models\Cabecalho;
 use App\Models\Contacto;
 use App\Models\Home;
@@ -18,6 +19,7 @@ class HomeController extends Controller
         $redes = RedeSocial::all();
         $livros = Livro::all();
         $home = Home::find(1);
+        $autor = Autor::find(1);
 
         $books = [];
 
@@ -32,6 +34,6 @@ class HomeController extends Controller
         }
 
 
-        return view('site.home', ['contactos' => $contactos, 'cabecalho' => $cabecalho, 'redes' => $redes, 'home' => $home, 'livros' => $livros, 'books' => $books]);
+        return view('site.home', ['contactos' => $contactos, 'cabecalho' => $cabecalho, 'redes' => $redes, 'home' => $home, 'livros' => $livros, 'books' => $books, 'autor' => $autor]);
     }
 }

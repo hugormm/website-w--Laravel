@@ -65,6 +65,6 @@
     </div>
 
     <!-- CAROUSSEL -->
-    <!--@include('site.layouts._components.caroussel') -->
+    @include('site.layouts._components.caroussel_mobile')
 
     </header>

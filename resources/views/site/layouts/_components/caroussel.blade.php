@@ -7,7 +7,7 @@
             <div class="carousel-indicators">
                 @for($i=0; $i<count($cabecalho); $i++)
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $i }}" class=" {{ ($i == 0) ? "active" : "" }}" aria-current="true" aria-label="Slide 1"></button>
-                @endfor;
+                @endfor
             </div>
 
             <div class="carousel-inner border">

@@ -21,7 +21,7 @@
                             <div>Bem-vindo ao meu website</div>
                         </div>
                         <div class="welcome_text col-12 px-0">
-                            <div>{{ $home->texto }}...</div>
+                            <div>{{ substr($autor->texto, 0, 1000) }}...</div>
                         </div>
                         <div class="col-3 welcome_button align-self-end text-end p-0 mt-3 d-flex justify-content-center">
                             <a href="{{ route('site.autor' )}}">
@@ -60,9 +60,9 @@
                             <img class="card_img" src="{{ $b->imagem }}" alt="book">
                         </div>
                         <div class="col-9 card_title p-0">{{ $b->titulo }}</div>
-                        <div class="col-4 card_new p-0">{{ $home->{'observacao_'.$c} }}</div>
+                        <div class="col-4 card_new p-0" {{ ($home->{'observacao_'.$c} == "") ? "style='margin-top: 32px;'" : "" }}>{{ $home->{'observacao_'.$c} }}</div>
                         <div class="col card_text p-0">
-                            <div>{{ $b->texto }}</div>
+                            <div>{{ substr($b->texto, 0, 250) }}</div>
                         </div>
 
                         <div class="col align-self-end">
