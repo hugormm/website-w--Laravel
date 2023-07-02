@@ -23,7 +23,7 @@
                             <div class="banner_new">{{ $c->tag }}</div>
                             <div class="banner_title">{{ $c->titulo }}</div>
                             <div class="banner_text">{{ $c->texto }}</div>
-                            <a href="{{ $c->saber_mais }}">
+                            <a href="{{ route('site.livros', ['livro_id' => $c->saber_mais]) }}">
                                 <button style="margin-top: 15px;" class="banner_button"></button>
                             </a>
                         </div>
