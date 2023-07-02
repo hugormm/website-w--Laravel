@@ -9,5 +9,11 @@ class Cabecalho extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['imagem', 'imagem_mobile', 'titulo', 'texto', 'tag', 'saber_mais'];
+    public function getImagemAttribute($value) {
+    // Remover o prefixo "/livros" da URL da imagem
+    $imagem = str_replace('/livros/', '', $value);
+
+    return $imagem;
+    }
+
 }

@@ -1,4 +1,6 @@
-@include('site.layouts._partials.header', ['cabecalho' => $cabecalho])
+@extends('site.layouts.basico')
+
+@section('conteudo')
 
 <main id="main" class="container-fluid">
 
@@ -45,6 +47,6 @@
         </div>    
         
     </main>
-
-    @include('site.layouts._partials.footer', ['contactos' => $contactos, 'redes' => $redes])
+    
+@endsection
     

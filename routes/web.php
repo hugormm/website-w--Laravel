@@ -22,4 +22,4 @@ Route::get('/', [HomeController::class, 'index'])->name('site.home');
 Route::get('/contactos', [ContactosController::class, 'index'])->name('site.contactos');
 Route::get('/autor', [AutorController::class, 'index'])->name('site.autor');
 Route::get('/imprensa', [ImprensaController::class, 'index'])->name('site.imprensa');
-Route::get('/livros', [LivrosController::class, 'index'])->name('site.livros');
+Route::get('/livros/{livro_id}', [LivrosController::class, 'index'])->name('site.livros');

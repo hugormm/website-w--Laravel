@@ -9,13 +9,11 @@
         <a id="book_menu" class="nav-link py-0 {{ (Request::is('livros')) ? "active" : "" }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Livros
         </a>
-        <!--
         <ul class="dropdown-menu">
-            foreach($livros as $l): ?>
-                <li><a class="dropdown-item" href=" $url_base . "livros/" . $l["id"]; ?>"> $l["titulo"] ?></a></li>
-            endforeach; ?>
+            @foreach($livros as $l)
+                <li><a class="dropdown-item" href="{{ route('site.livros', ['livro_id' => $l->id]) }}">{{ $l->titulo }}</a></li>
+            @endforeach
         </ul>
-        -->
     </li>
     <li class="nav-item">
         <a class="nav-link py-0 {{ (Request::is('imprensa')) ? "active" : "" }}" href="{{ route('site.imprensa') }}">Imprensa</a>
