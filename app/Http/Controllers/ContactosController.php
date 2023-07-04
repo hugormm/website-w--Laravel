@@ -17,6 +17,11 @@ class ContactosController extends Controller
         $redes = RedeSocial::all();
         $livros = Livro::all();
         
-        return view('site.contactos', ['contactos' => $contactos, 'cabecalho' => $cabecalho, 'redes' => $redes, 'livros' => $livros]);
+        return view('site.contactos', [
+            'contactos' => $contactos, 
+            'cabecalho' => $cabecalho, 
+            'redes' => $redes, 
+            'livros' => $livros
+        ]);
     }
 }

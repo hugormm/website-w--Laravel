@@ -30,10 +30,18 @@ class HomeController extends Controller
             $books[] = $livros->find($home->destaque_2);
         }
         if($home->destaque_3 != 0){
-            $books[] = $livros->find($home->destaque_2);
+            $books[] = $livros->find($home->destaque_3);
         }
 
 
-        return view('site.home', ['contactos' => $contactos, 'cabecalho' => $cabecalho, 'redes' => $redes, 'home' => $home, 'livros' => $livros, 'books' => $books, 'autor' => $autor]);
+        return view('site.home', [
+            'contactos' => $contactos, 
+            'cabecalho' => $cabecalho, 
+            'redes' => $redes, 
+            'home' => $home, 
+            'livros' => $livros, 
+            'books' => $books, 
+            'autor' => $autor
+        ]);
     }
 }

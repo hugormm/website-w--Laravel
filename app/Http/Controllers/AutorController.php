@@ -20,6 +20,12 @@ class AutorController extends Controller
         $livros = Livro::all();
         $autor = Autor::find(1);
 
-        return view('site.autor', ['autor' => $autor, 'cabecalho' => $cabecalho, 'contactos' => $contactos, 'redes' => $redes, 'livros' => $livros]);
+        return view('site.autor', [
+            'autor' => $autor, 
+            'cabecalho' => $cabecalho, 
+            'contactos' => $contactos, 
+            'redes' => $redes, 
+            'livros' => $livros
+        ]);
     }
 }

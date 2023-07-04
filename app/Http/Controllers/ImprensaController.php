@@ -19,6 +19,12 @@ class ImprensaController extends Controller
         $livros = Livro::all();
         $imprensa = Imprensa::simplePaginate(2);
         
-        return view('site.imprensa', ['contactos' => $contactos, 'cabecalho' => $cabecalho, 'redes' => $redes, 'imprensa' => $imprensa, 'livros' => $livros]);
+        return view('site.imprensa', [
+            'contactos' => $contactos, 
+            'cabecalho' => $cabecalho, 
+            'redes' => $redes, 
+            'imprensa' => $imprensa, 
+            'livros' => $livros
+        ]);
     }
 }

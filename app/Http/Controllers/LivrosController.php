@@ -18,6 +18,12 @@ class LivrosController extends Controller
         $livro = Livro::find($livro_id);
         $cabecalho = Cabecalho::all();
         
-        return view('site.livros', ['contactos' => $contactos, 'redes' => $redes, 'livros' => $livros, 'livro' => $livro, 'cabecalho' => $cabecalho]);
+        return view('site.livros', [
+            'contactos' => $contactos, 
+            'redes' => $redes, 
+            'livros' => $livros, 
+            'livro' => $livro, 
+            'cabecalho' => $cabecalho
+        ]);
     }
 }
