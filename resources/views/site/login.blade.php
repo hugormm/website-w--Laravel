@@ -1,4 +1,4 @@
-@extends('backoffice.layouts.basico_bo')
+@extends('backoffice.layouts.basico')
 
 @section('conteudo')
     
