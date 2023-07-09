@@ -1,12 +1,21 @@
 <?php
 
+use App\Http\Controllers\AutorBackofficeController;
 use App\Http\Controllers\AutorController;
+use App\Http\Controllers\CarousselBackofficeController;
+use App\Http\Controllers\ConfigBackofficeController;
+use App\Http\Controllers\ContactosBackofficeController;
 use App\Http\Controllers\ContactosController;
+use App\Http\Controllers\DestaquesBackofficeController;
+use App\Http\Controllers\HomeBackofficeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImprensaBackofficeController;
 use App\Http\Controllers\ImprensaController;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\LivrosBackofficeController;
 use App\Http\Controllers\LivrosController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RedesBackofficeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,15 +39,15 @@ Route::post('/login', [LoginController::class, 'autenticar'])->name('site.login'
 
 Route::middleware('autenticacao', 'log.acesso')->prefix('/backoffice')->group(function(){
     Route::get('/inicio', [InicioController::class, 'index'])->name('backoffice.inicio');
-    Route::get('/logoff', [HomeController::class, 'index'])->name('backoffice.logoff');
-    Route::get('/caroussel', [HomeController::class, 'index'])->name('backoffice.caroussel');
-    Route::get('/home', [HomeController::class, 'index'])->name('backoffice.home');
-    Route::get('/autor', [HomeController::class, 'index'])->name('backoffice.autor');
-    Route::get('/livros', [HomeController::class, 'index'])->name('backoffice.livros');
-    Route::get('/destaques', [HomeController::class, 'index'])->name('backoffice.destaques');
-    Route::get('/imprensa', [HomeController::class, 'index'])->name('backoffice.imprensa');
-    Route::get('/contactos', [HomeController::class, 'index'])->name('backoffice.contactos');
-    Route::get('/redes', [HomeController::class, 'index'])->name('backoffice.redes');
-    Route::get('/configuracoes', [HomeController::class, 'index'])->name('backoffice.configuracoes');
+    Route::get('/logoff', [LoginController::class, 'sair'])->name('backoffice.logoff');
+    Route::resource('home', HomeBackofficeController::class);
+    Route::resource('autor', AutorBackofficeController::class);
+    Route::resource('redes', RedesBackofficeController::class);
+    Route::resource('contactos', ContactosBackofficeController::class);
+    Route::resource('caroussel', CarousselBackofficeController::class);
+    Route::resource('livros', LivrosBackofficeController::class);
+    Route::resource('imprensa', ImprensaBackofficeController::class);
+    Route::resource('configuracoes', ConfigBackofficeController::class);
+    Route::resource('destaques', DestaquesBackofficeController::class);
 
 });

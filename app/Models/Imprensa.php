@@ -10,4 +10,6 @@ class Imprensa extends Model
     use HasFactory;
 
     protected $table = 'imprensa';
+
+    protected $fillable = ['titulo', 'imagem', 'texto'];
 }

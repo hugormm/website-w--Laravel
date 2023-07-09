@@ -9,4 +9,6 @@ class Autor extends Model
 {
     use HasFactory;
     protected $table = 'autor';
+
+    protected $fillable = ['foto', 'texto'];
 }

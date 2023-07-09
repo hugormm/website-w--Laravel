@@ -10,4 +10,6 @@ class Home extends Model
     use HasFactory;
 
     protected $table = 'home';
+
+    protected $fillable = ['imagem', 'texto'];
 }

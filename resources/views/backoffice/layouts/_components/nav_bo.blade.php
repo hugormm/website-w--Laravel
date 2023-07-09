@@ -9,31 +9,31 @@
                     <a class="nav-link {{ (Request::is('/backoffice/inicio')) ? "active" : "" }}" aria-current="page" href="{{ route('backoffice.inicio') }}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/caroussel')) ? "active" : "" }}" href="{{ route('backoffice.caroussel') }}">Caroussel</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/caroussel')) ? "active" : "" }}" href="{{ route('caroussel.index') }}">Caroussel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/home')) ? "active" : "" }}" href="{{ route('backoffice.home') }}">Home</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/home')) ? "active" : "" }}" href="{{ route('home.index') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/autor')) ? "active" : "" }}" href="{{ route('backoffice.autor') }}">Autor</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/autor')) ? "active" : "" }}" href="{{ route('autor.index') }}">Autor</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/livros')) ? "active" : "" }}" href="{{ route('backoffice.livros') }}">Livros</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/livros')) ? "active" : "" }}" href="{{ route('livros.index') }}">Livros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/destaques')) ? "active" : "" }}" href="{{ route('backoffice.destaques') }}">Destaques</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/destaques')) ? "active" : "" }}" href="{{ route('destaques.index') }}">Destaques</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/imprensa')) ? "active" : "" }}" href="{{ route('backoffice.imprensa') }}">Imprensa</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/imprensa')) ? "active" : "" }}" href="{{ route('imprensa.index') }}">Imprensa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/contactos')) ? "active" : "" }}" href="{{ route('backoffice.contactos') }}">Contactos</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/contactos')) ? "active" : "" }}" href="{{ route('contactos.index') }}">Contactos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/redes')) ? "active" : "" }}" href="{{ route('backoffice.redes') }}">Redes</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/redes')) ? "active" : "" }}" href="{{ route('redes.index') }}">Redes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::is('/backoffice/configuracoes')) ? "active" : "" }}" href="{{ route('backoffice.configuracoes') }}">Configurações</a>
+                    <a class="nav-link {{ (Request::is('/backoffice/configuracoes')) ? "active" : "" }}" href="{{ route('configuracoes.index') }}">Configurações</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ (Request::is('/backoffice/logoff')) ? "active" : "" }}" href="{{ route('backoffice.logoff') }}">Sair</a>

@@ -9,4 +9,5 @@ class RedeSocial extends Model
 {
     use HasFactory;
     protected $table = 'redes_sociais';
+    protected $fillable = ['link'];
 }

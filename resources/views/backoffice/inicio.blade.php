@@ -7,7 +7,7 @@
         <div class="col-12 box mt-3 p-4 text-center">
             <h3> BEM VINDO(A) {{ strtoupper($_SESSION["nome"]) }}</h3>
             <br>
-            
+            <h5>Ultimo acesso: ({{ $ultimo_acesso }})</h5>
         </div>
     </div>
     

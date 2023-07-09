@@ -11,9 +11,11 @@
             <form action="{{ route('site.login') }}" method="POST">
                 @csrf
                 <input type="text" name="user" placeholder="Email" style="width: 20%;">
+                <br>
                 {{ $errors->has('user') ? $errors->first('user') : '' }}
                 <br><br>
                 <input type="password" name="password" placeholder="Password">
+                <br>
                 {{ $errors->has('password') ? $errors->first('password') : '' }}
                 <br><br>
                 <input type="submit" value="ENTRAR">
