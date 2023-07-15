@@ -17,7 +17,7 @@ class ImprensaController extends Controller
         $contactos = Contacto::find(1);
         $redes = RedeSocial::all();
         $livros = Livro::all();
-        $imprensa = Imprensa::simplePaginate(2);
+        $imprensa = Imprensa::Paginate(2);
         
         return view('site.imprensa', [
             'contactos' => $contactos, 

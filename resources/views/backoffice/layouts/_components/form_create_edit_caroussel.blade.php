@@ -1,6 +1,5 @@
 @if(isset($caroussel->id))
 <form action="{{ route('caroussel.update', ['caroussel' => $caroussel->id]) }}" method="POST">
-    {{ var_dump($caroussel->id) }}
     @csrf
     @method('PUT')
 @else

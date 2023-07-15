@@ -42,8 +42,24 @@
     </div>   
 
     @endforeach
+    <div class="row ">
+        <div class="col-6 m-auto d-flex justify-content-center mt-4">
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="{{ $imprensa->previousPageUrl() }}">Voltar</a></li>
 
-    {{ $imprensa->links() }}
+                    @for($i = 1; $i <= $imprensa->lastPage(); $i++)
+                        <li class="page-item {{ $imprensa->currentPage() == $i ? 'active' : ''}}">
+                            <a class="page-link" href="{{ $imprensa->url($i) }}">{{ $i }}</a>
+                        </li>
+                    @endfor
+
+                    <li class="page-item"><a class="page-link" href="{{ $imprensa->nextPageUrl() }}">Avancar</a></li>
+                </ul>
+            </nav>
+        <div>
+    </div>
+
 
 </main>
 
