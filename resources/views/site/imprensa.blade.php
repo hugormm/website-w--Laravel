@@ -46,15 +46,15 @@
         <div class="col-6 m-auto d-flex justify-content-center mt-4">
             <nav>
                 <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="{{ $imprensa->previousPageUrl() }}">Voltar</a></li>
+                    <li class="page-item"><a class="page-link previous_page" href="{{ $imprensa->previousPageUrl() }}"></a></li>
 
                     @for($i = 1; $i <= $imprensa->lastPage(); $i++)
-                        <li class="page-item {{ $imprensa->currentPage() == $i ? 'active' : ''}}">
-                            <a class="page-link" href="{{ $imprensa->url($i) }}">{{ $i }}</a>
+                        <li class="page-item">
+                            <a class="page-link paginacao {{ $imprensa->currentPage() == $i ? 'active' : ''}}" href="{{ $imprensa->url($i) }}">{{ $i }}</a>
                         </li>
                     @endfor
 
-                    <li class="page-item"><a class="page-link" href="{{ $imprensa->nextPageUrl() }}">Avancar</a></li>
+                    <li class="page-item"><a class="page-link next_page" href="{{ $imprensa->nextPageUrl() }}"></a></li>
                 </ul>
             </nav>
         <div>

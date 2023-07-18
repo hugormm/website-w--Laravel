@@ -497,6 +497,7 @@ footer {
     margin: 0px 35px;
     background-color: white;
     background-image: url("../SVG/setaesquerda1.svg");
+    background-repeat: no-repeat;
 }
 
 .previous_page:hover {
@@ -510,6 +511,7 @@ footer {
     margin: 0px 35px;
     background-color: white;
     background-image: url("../SVG/setadireita1.svg");
+    background-repeat: no-repeat;
 }
 
 .next_page:hover {
@@ -525,6 +527,12 @@ footer {
     color: rgb(77, 77, 77);
     background-color: white;
 }
+
+.paginacao.active {
+    color: rgb(244, 203, 150);
+    background-color: white !important;
+}
+
 
 @media all and (min-width: 1280px) {
 
